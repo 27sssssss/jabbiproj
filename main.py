@@ -65,7 +65,6 @@ def encode_image_to_base64(image_path):
         print(f"Ошибка при кодировании изображения: {e}")
         return None
 
-# --- Generation Functions ---
 def generate_text_with_model(selected_model_details):
     """Генерация текста с использованием выбранной модели."""
     if not selected_model_details:
