@@ -9,7 +9,7 @@ from urllib.parse import quote_plus
 
 TEXT_MODELS_URL = "https://text.pollinations.ai/models"
 IMAGE_MODELS_URL = "https://image.pollinations.ai/models"
-TEXT_GENERATION_OPENAI_URL = "https://text.pollinations.ai/openai"  # OpenAI compatible endpoint
+TEXT_GENERATION_OPENAI_URL = "https://text.pollinations.ai/openai" 
 IMAGE_GENERATION_BASE_URL = "https://image.pollinations.ai/prompt/"
 
 def fetch_models(url):
@@ -47,7 +47,6 @@ def select_model_from_list(models_data, model_type="text"):
             print("Неверный ввод. Пожалуйста, введите число.")
 
 def get_image_path_gui():
-    """Открывает диалоговое окно для выбора файла изображения."""
     root = tk.Tk()
     root.withdraw()
     file_path = filedialog.askopenfilename(
